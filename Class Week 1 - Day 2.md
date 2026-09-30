@@ -1,5 +1,11 @@
-Date: Thursday, Sept 24, 2026
-
+---
+date: 2026-11-24
+course: COEN 283
+tags:
+  - architecture
+  - risc-v
+  - booting
+---
 # Bottom-Up | Computer Architecture ISA
 
 Before getting into operating systems, we need to understand computer architecture so we have a better foundation for OS concepts.

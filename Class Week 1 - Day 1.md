@@ -2,6 +2,10 @@
 date: 2026-09-22
 course: COEN 283
 topic: Operating Systems
+tags:
+  - intro
+  - os
+  - unix
 ---
 # Operating Systems — Lecture 1
 
