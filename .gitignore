@@ -8,3 +8,5 @@
 
 # Installed community plugin bundles
 .obsidian/plugins/
+
+.DS_Store
