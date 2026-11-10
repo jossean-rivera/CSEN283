@@ -145,7 +145,7 @@ The busy-wait version wastes CPU time. A blocking semaphore uses a waiting queue
 ```c
 void signal(sem_t *s) {
     s->count++;
-    if (s->count <= 0) {       // a process is still waiting
+    if (s->count <= 0) { // a process is still waiting
         pcb *p = dequeue(s->p_block_q);
         wakeup(p);
     }
@@ -153,7 +153,7 @@ void signal(sem_t *s) {
 
 void wait(sem_t *s) {
     s->count--;
-    if (s->count < 0) {        // no resource was available before decrementing
+    if (s->count < 0) { // no resource was available before decrementing
         enqueue(me, s->p_block_q);
         block(me);
     }
