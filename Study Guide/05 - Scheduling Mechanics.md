@@ -25,7 +25,7 @@ Runnable means eligible for CPU time, not currently executing. Sleeping means wa
 | `swtch()` | Save one kernel context and restore another. |
 | `sched()` | Switch from the current process's kernel context to the scheduler after a state change. |
 | `yield()` | Make current process runnable and give up the CPU. |
-| `sleep(chan, lock)` | Atomically arrange a wait on a channel and yield; exact locking matters. |
+| Sleep function, with channel and lock arguments | Atomically arrange a wait on a channel and yield; exact locking matters. |
 | `wakeup(chan)` | Mark processes waiting on the channel runnable; it does not immediately run them. |
 
 A switch has overhead: saved/restored registers, scheduler work, and potentially lost cache locality. Switching between processes can also change memory translation. xv6's basic scheduler cycles through runnable processes; examine the assigned version for exact details.
